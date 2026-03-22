@@ -433,7 +433,7 @@ void handleUserCalibration(bool buttonReleased,uint32_t pressTime){
                    return;
 
           }
-            if(measuredHeight >= 4.95 && measuredHeight <= 5.05){
+            if(measuredHeight >= 4.91 && measuredHeight <= 5.09){
                  tft.fillScreen(ST7735_BLACK);
                  tft.setTextColor(ST7735_WHITE);
                  tft.drawRoundRect(30,30,100,70,8,0x2d13);
@@ -470,11 +470,11 @@ void handleUserCalibration(bool buttonReleased,uint32_t pressTime){
 
                  tft.setFont(NULL);
                  tft.setTextSize(1);
-                 tft.setCursor(50,65);
+                 tft.setCursor(50,55);
                  tft.println("Set 5mm JIG");
-                 tft.setCursor(55,80);
+                 tft.setCursor(55,70);
                  tft.println("PressBTN");
-                 tft.setCursor(40,95);
+                 tft.setCursor(40,85);
                  tft.print("Meas: ");
                  tft.print(measuredHeight,2);
                  tft.println(" mm");
